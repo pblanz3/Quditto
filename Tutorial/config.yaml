@@ -4,9 +4,9 @@ config:
   application_interface: etsi-gs-qkd-014
   qkd_protocol: bb84
   controller: A
-  ip_controller: 172.20.35.105
-  netsquid_user: pblanco1clab
-  netsquid_pwd: gvPBDaGhxVA9TX
+  ip_controller: 10.4.48.59
+  netsquid_user: your_user
+  netsquid_pwd: your_pwd
 
 sites:
   - Sevilla
@@ -16,7 +16,7 @@ sites:
 nodes:
   - node_name: A
     node_site: Sevilla
-    node_ip: 172.20.35.105
+    node_ip: 10.4.48.59
     neighbour_nodes:
 
       - name: B
@@ -34,7 +34,7 @@ nodes:
 
   - node_name: B
     node_site: Malaga
-    node_ip: 172.20.44.165
+    node_ip: 10.4.48.129
     neighbour_nodes:
 
       - name: A
@@ -44,7 +44,7 @@ nodes:
 
   - node_name: C
     node_site: Cadiz
-    node_ip: 172.20.34.83
+    node_ip: 10.4.48.188
     neighbour_nodes:
 
     - name: A

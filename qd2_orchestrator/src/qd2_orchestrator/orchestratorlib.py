@@ -171,8 +171,8 @@ generate_certs_play = [
         {
             "name": "Fetch Node CA certificate",
             "ansible.builtin.fetch":{
-                "src": "{{ ansible_env.HOME }}/quditto_certs/{{ inventory_hostname }}_ca.crt",
-                "dest": CURRENT_WORKING_DIR + "/client_certs/SAE_" + "{{ inventory_hostname }}_ca.crt",
+                "src": "{{ ansible_env.HOME }}/quditto_certs/" + "{{ inventory_hostname }}_ca.crt",
+                "dest": CURRENT_WORKING_DIR + "/client_certs/" + "{{ inventory_hostname }}_ca.crt",
                 "flat": True
             }
         }
